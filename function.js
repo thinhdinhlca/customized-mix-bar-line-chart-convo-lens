@@ -4,8 +4,8 @@
 window.function = function (data, average, width, height, tooltips) {
 
   // data
-  data = data.value ?? "";
-  average = average.value ?? "";
+  data = data.value ?? "100,20,80";
+  average = average.value ?? "90,30,70";
   width = width.value ?? "100";
   height = height.value ?? "80";
   tooltips = tooltips.value ?? "";
