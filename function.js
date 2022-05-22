@@ -1,10 +1,11 @@
 // https://www.chartjs.org/
 
 
-window.function = function (data, width, height, tooltips) {
+window.function = function (data, average, width, height, tooltips) {
 
   // data
-  data = data.value ?? "100,125,45";
+  data = data.value ?? "";
+  average = average.value ?? "";
   width = width.value ?? "100";
   height = height.value ?? "80";
   tooltips = tooltips.value ?? "";
@@ -34,6 +35,14 @@ window.function = function (data, width, height, tooltips) {
         borderColor: 'black',
         borderWidth: 1,
         data: [${data}],
+      },
+      {
+        type: 'line',
+        label: 'Line Dataset',
+        data: [{average}],
+        fill: false,
+        borderColor: '#db92d7',
+        tension: 0.1
       }
     ],
   },
