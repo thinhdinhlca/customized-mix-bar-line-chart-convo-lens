@@ -34,10 +34,10 @@ window.function = function (data, average, width, height, tooltips) {
         label: 'Average',
         data: [${average}],
         fill: false,
-        borderColor: '#db92d7',
+        borderColor: '#DFBD69',
         tension: 0.1,
         pointRadius: 4,
-        pointBackgroundColor: '#db92d7'
+        pointBackgroundColor: '#DFBD69'
       },
       {
         label: '',
