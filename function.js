@@ -39,7 +39,7 @@ window.function = function (data, average, width, height, tooltips) {
       {
         type: 'line',
         label: 'Line Dataset',
-        data: [{average}],
+        data: [${average}],
         fill: false,
         borderColor: '#db92d7',
         tension: 0.1
