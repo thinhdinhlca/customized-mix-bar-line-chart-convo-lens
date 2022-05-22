@@ -30,19 +30,19 @@ window.function = function (data, average, width, height, tooltips) {
     labels: ['Socialize','Task','Inquire','Advocate','Support','Disagree','Facilitate','Action Plan'],
     datasets: [
       {
-        label: '',
-        backgroundColor: ['#00254D','#549F93','#E55934','#DAC4F7','#576CA8','#9A031E','#1FC7FF','#883E30'],
-        borderColor: 'black',
-        borderWidth: 1,
-        data: [${data}],
-      },
-      {
         type: 'line',
         label: 'Average',
         data: [${average}],
         fill: false,
         borderColor: '#db92d7',
         tension: 0.1
+      },
+      {
+        label: '',
+        backgroundColor: ['#00254D','#549F93','#E55934','#DAC4F7','#576CA8','#9A031E','#1FC7FF','#883E30'],
+        borderColor: 'black',
+        borderWidth: 1,
+        data: [${data}],
       }
     ],
   },
