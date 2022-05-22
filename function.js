@@ -35,7 +35,9 @@ window.function = function (data, average, width, height, tooltips) {
         data: [${average}],
         fill: false,
         borderColor: '#db92d7',
-        tension: 0.1
+        tension: 0.1,
+        pointRadius: 4,
+        pointBackgroundColor: '#db92d7'
       },
       {
         label: '',
